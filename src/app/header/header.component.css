@@ -1,6 +1,8 @@
 header {
   margin-top: 10px;
   height: 50px;
+  justify-content: center;
+  display: flex;
 }
 
 a {
@@ -31,4 +33,10 @@ nav {
 .banana:hover {
   background: url('../../assets/half-banana.png');
   background-size: auto 100%;
+}
+
+#search {
+  top: 20px;
+  right: 30px;
+  position: absolute;
 }
