@@ -1,3 +1,8 @@
+header {
+  margin-top: 10px;
+  height: 50px;
+}
+
 a {
   margin: 0 10px;
   text-decoration: none;
@@ -12,12 +17,18 @@ nav {
   display: flex;
 }
 
-.logo {
+.banana {
+  top: 10px;
   left: 10px;
   position: absolute;
+  width: 25px;
+  height: 25px;
+  outline: none;
+  background: url('../../assets/happy-banana.png');
+  background-size: auto 100%;
 }
 
-header {
-  margin-top: 10px;
-  height: 50px;
+.banana:hover {
+  background: url('../../assets/half-banana.png');
+  background-size: auto 100%;
 }
