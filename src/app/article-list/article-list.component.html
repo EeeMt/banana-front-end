@@ -1,0 +1,23 @@
+<div class="main-container">
+  <ul id="article-list" class="container">
+    <li *ngFor="let articleListItem of articleListItems " (focus)="onFocus()">
+      <a routerLink="/article/detail/{{articleListItem.id}}">
+        <h2 id="article-list-item-header" class="header">{{articleListItem.title}}</h2>
+
+      <article>
+        <markdown [data]="articleListItem.intro"></markdown>
+      </article>
+      </a>
+
+      <div id="article-list-item-info">
+        <div class="info-item">{{articleListItem.category}}</div>
+        <div class="info-item">・</div>
+        <div class="info-item">
+          {{articleListItem.updateTime}}更新
+        </div>
+      </div>
+
+      <div class="article-list-item-end"></div>
+    </li>
+  </ul>
+</div>
