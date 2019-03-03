@@ -1,12 +1,14 @@
-font {
+#copyRight {
   font-weight: lighter;
   font-size: xx-small;
+  position: absolute;
+  bottom: 0;
 }
 
 /*#backToTop {*/
-  /*bottom: 5px;*/
-  /*right: 5px;*/
-  /*position: relative;*/
+/*bottom: 5px;*/
+/*right: 5px;*/
+/*position: relative;*/
 
 /*}*/
 

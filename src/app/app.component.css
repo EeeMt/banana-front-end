@@ -2,3 +2,7 @@ app-article-list, app-footer, app-header {
   display: flex;
   justify-content: center;
 }
+
+app-root {
+  min-height: 100%;
+}
