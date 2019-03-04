@@ -49,6 +49,7 @@
 
 .selected > .switch-item {
   color: #575757;
+  font-weight: normal;
 }
 
 

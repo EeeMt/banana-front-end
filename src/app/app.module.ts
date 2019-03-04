@@ -18,6 +18,7 @@ import {AboutBlogComponent} from './about-blog/about-blog.component';
 import {CommentComponent} from './comment/comment.component';
 import {HttpClientModule} from '@angular/common/http';
 import {NgxLoadingModule} from 'ngx-loading';
+import { TagsComponent } from './tags/tags.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {NgxLoadingModule} from 'ngx-loading';
     ScrollTopComponent,
     AboutMeComponent,
     AboutBlogComponent,
-    CommentComponent
+    CommentComponent,
+    TagsComponent
   ],
   imports: [
     HttpClientModule,

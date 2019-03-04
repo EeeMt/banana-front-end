@@ -8,12 +8,14 @@ import {AboutComponent} from './about/about.component';
 import {PlaygroundComponent} from './playground/playground.component';
 import {AboutMeComponent} from './about-me/about-me.component';
 import {AboutBlogComponent} from './about-blog/about-blog.component';
+import {TagsComponent} from './tags/tags.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'article', pathMatch: 'full'},
   {path: 'article', component: ArticleListComponent},
   {path: 'archives', component: ArchivesComponent},
   {path: 'categories', component: CategoriesComponent},
+  {path: 'tags', component: TagsComponent},
   {
     path: 'about', component: AboutComponent,
     children: [
