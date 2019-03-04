@@ -68,7 +68,14 @@ p {
   margin-bottom: 5%;
 }
 
-.item-container:hover{
-  margin: 0px -2px 0px 2px;
+.item-container:hover {
+  margin: 0 -5px 0 5px;
   background-color: rgba(228, 228, 228, 0.11);
+}
+
+.item-container {
+  transition: margin 0.2s linear;
+  -o-transition: margin 0.2s linear;
+  -moz-transition: margin 0.2s linear;
+  -webkit-transition: margin 0.2s linear;
 }
