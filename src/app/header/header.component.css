@@ -15,7 +15,11 @@ a {
 }
 
 a:hover {
-  color: #000;
+  color: #000000;
+}
+
+a:active {
+  color: rgba(185, 185, 185, 0.98);
 }
 
 nav {
