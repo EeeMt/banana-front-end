@@ -3,7 +3,7 @@ import {Article} from '../model/article';
 
 export const ARTICLE_LIST_ITEMS: ArticleListItem[] = [
   {
-    id: 11,
+    id: 1,
     title: '旅行的意义',
     updateTime: '2019-01-24',
     category: 'Life',
@@ -13,6 +13,16 @@ export const ARTICLE_LIST_ITEMS: ArticleListItem[] = [
       '你品嚐了夜的巴黎\n' +
       '你踏過下雪的北京\n' +
       '你熟記書本裡每一句你最愛的真理'
+  }, {
+    id: 32,
+    title: '你的名字是漫长的国境线',
+    updateTime: '2019-01-24',
+    category: 'Life',
+    intro: '我们多么草率地成为了孤儿。玛琳娜，' +
+      '\n' +
+      '大雪落在' +
+      '\n' +
+      '说吧：今夜，我的嗓音是一列被截停的火车，'
   },
   {
     id: 12,
@@ -93,8 +103,8 @@ export const ARTICLE: Article = {
       '那女人的话音在血的滴答声里还在他耳里响着：先经过一间蓝色的前厅，接着是大厅，再接着便是一条铺着地毯的长长的楼梯。' +
       '楼梯顶端，两扇门。第一个房间空无一人，第二个房间也空无一人。' +
       '接着，就是会客室的门，他手握刀子，看到那从大窗户里射出的灯光，那饰着绿色天鹅绒的扶手椅高背上露出的人头，那人正在阅读一本小说。',
-    category: 'Life',
-    views: 23,
+    // category: 'Life',
+    // views: 23,
     updateTime: '2019-02-01'
   }
 ;

@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Article} from '../model/article';
-import {ARTICLE} from '../mock/mock-articles';
+import {ArticleService} from '../service/article.service';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-article-detail',
@@ -8,14 +9,31 @@ import {ARTICLE} from '../mock/mock-articles';
   styleUrls: ['./article-detail.component.css']
 })
 export class ArticleDetailComponent implements OnInit {
-
+  public loading = false;
   article: Article;
 
-  constructor() {
+  constructor(private articleService: ArticleService,
+              private route: ActivatedRoute) {
   }
 
   ngOnInit() {
-    this.article = ARTICLE;
+    this.fetch();
+    console.log('finish init');
   }
 
+  fetch(): void {
+    this.loading = true;
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.articleService.getArticleById(id)
+      .subscribe(
+        res => {
+          this.loading = false;
+          this.article = res;
+        },
+        err => {
+          this.loading = false;
+        }
+      );
+
+  }
 }

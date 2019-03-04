@@ -1,9 +1,16 @@
 <div class="main-container">
-  <h2>{{article.title}}</h2>
-  <article>
-    <markdown ngPreserveWhitespaces>
-      {{article.content}}
-    </markdown>
-  </article>
-
+  <div *ngIf="article">
+    <h2>{{article.title}}</h2>
+    <article>
+      <markdown ngPreserveWhitespaces>
+        {{article.content}}
+      </markdown>
+    </article>
+  </div>
+  <div id="loading-container">
+    <div *ngIf="!article" class="place-holder" id="loading">
+      Loading...
+    </div>
+  </div>
 </div>
+<!--<ngx-loading [show]="loading"></ngx-loading>-->

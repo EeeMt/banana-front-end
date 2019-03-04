@@ -15,8 +15,9 @@ import {PlaygroundComponent} from './playground/playground.component';
 import {ScrollTopComponent} from './scroll-top/scroll-top.component';
 import {AboutMeComponent} from './about-me/about-me.component';
 import {AboutBlogComponent} from './about-blog/about-blog.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { CommentComponent } from './comment/comment.component';
+import {CommentComponent} from './comment/comment.component';
+import {HttpClientModule} from '@angular/common/http';
+import {NgxLoadingModule} from 'ngx-loading';
 
 @NgModule({
   declarations: [
@@ -35,10 +36,11 @@ import { CommentComponent } from './comment/comment.component';
     CommentComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
-    BrowserAnimationsModule,
     AppRoutingModule,
     MarkdownModule.forRoot(),
+    NgxLoadingModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]

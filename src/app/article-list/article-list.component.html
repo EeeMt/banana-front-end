@@ -1,12 +1,12 @@
 <div class="main-container">
   <ul id="article-list" class="container">
-    <li *ngFor="let articleListItem of articleListItems " (focus)="onFocus()">
+    <li *ngFor="let articleListItem of articleListItems ">
       <a routerLink="/article/detail/{{articleListItem.id}}">
         <h2 id="article-list-item-header" class="header">{{articleListItem.title}}</h2>
 
-      <article>
-        <markdown [data]="articleListItem.intro"></markdown>
-      </article>
+        <article>
+          <markdown [data]="articleListItem.intro"></markdown>
+        </article>
       </a>
 
       <div id="article-list-item-info">

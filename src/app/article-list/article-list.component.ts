@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ArticleListItem} from '../model/articleListItem';
 import {ARTICLE_LIST_ITEMS} from '../mock/mock-articles';
+import {ArticleService} from '../service/article.service';
 
 @Component({
   selector: 'app-article-list',
@@ -11,7 +12,7 @@ export class ArticleListComponent implements OnInit {
 
   articleListItems: ArticleListItem[];
 
-  constructor() {
+  constructor(private articleService: ArticleService) {
   }
 
   ngOnInit() {
@@ -19,7 +20,4 @@ export class ArticleListComponent implements OnInit {
     console.log(this.articleListItems);
   }
 
-  onFocus() {
-    console.log('on focus');
-  }
 }
