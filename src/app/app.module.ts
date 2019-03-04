@@ -16,6 +16,7 @@ import {ScrollTopComponent} from './scroll-top/scroll-top.component';
 import {AboutMeComponent} from './about-me/about-me.component';
 import {AboutBlogComponent} from './about-blog/about-blog.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { CommentComponent } from './comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     PlaygroundComponent,
     ScrollTopComponent,
     AboutMeComponent,
-    AboutBlogComponent
+    AboutBlogComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,
