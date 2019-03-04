@@ -1,5 +1,5 @@
-import {ArticleListItem} from './articleListItem';
-import {Article} from './article';
+import {ArticleListItem} from '../model/articleListItem';
+import {Article} from '../model/article';
 
 export const ARTICLE_LIST_ITEMS: ArticleListItem[] = [
   {

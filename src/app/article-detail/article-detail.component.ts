@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {Article} from '../article';
-import {ARTICLE} from '../mock-articles';
+import {Article} from '../model/article';
+import {ARTICLE} from '../mock/mock-articles';
 
 @Component({
   selector: 'app-article-detail',

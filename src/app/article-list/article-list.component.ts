@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ArticleListItem} from '../articleListItem';
-import {ARTICLE_LIST_ITEMS} from '../mock-articles';
+import {ArticleListItem} from '../model/articleListItem';
+import {ARTICLE_LIST_ITEMS} from '../mock/mock-articles';
 
 @Component({
   selector: 'app-article-list',
