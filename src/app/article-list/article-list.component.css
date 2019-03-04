@@ -68,5 +68,7 @@ p {
   margin-bottom: 5%;
 }
 
-
-
+.item-container:hover{
+  margin: 0px -2px 0px 2px;
+  background-color: rgba(228, 228, 228, 0.11);
+}
