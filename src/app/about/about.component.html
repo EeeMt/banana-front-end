@@ -1,5 +1,33 @@
 <div class="main-container">
-  <p>
-    about works!
-  </p>
+  <div id="switch">
+    <div class="switch-item-box" [ngClass]="{'selected': selectedItem === 'about-me' }" id="switch-item-box-left" (click)="setActive('about-me')">
+      <a routerLink="about-me" class="switch-item">About Me</a>
+    </div>
+    <div class="separator">
+      /
+    </div>
+    <div class="switch-item-box" [ngClass]="{'selected': selectedItem === 'about-blog' }" id="switch-item-box-right" (click)="setActive('about-blog')">
+      <a routerLink="about-blog" class="switch-item">About Blog</a>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
 </div>
+
+
+<!--<div class="main-container">-->
+  <!--<markdown ngPreserveWhitespaces>-->
+    <!--# About me-->
+    <!--WhoAmI-->
+    <!-- - 90后-->
+    <!-- - 数码爱好者-->
+    <!-- - 无神论者-->
+    <!-- - Java Developer-->
+    <!-- - 瘦子-->
+
+    <!--联系我:-->
+    <!-- - Email: `hxq@live.com`-->
+    <!-- - Github: [Eeemt](https://github.com/EeeMt)-->
+
+  <!--</markdown>-->
+
+<!--</div>-->

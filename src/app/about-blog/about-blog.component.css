@@ -1,0 +1,7 @@
+.main-container {
+  flex-direction: column;
+}
+
+* {
+  color: #686868;
+}

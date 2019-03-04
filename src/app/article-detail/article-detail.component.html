@@ -1,5 +1,9 @@
 <div class="main-container">
-  <p>
-    article-detail works!
-  </p>
+  <h2>{{article.title}}</h2>
+  <article>
+    <markdown ngPreserveWhitespaces>
+      {{article.content}}
+    </markdown>
+  </article>
+
 </div>

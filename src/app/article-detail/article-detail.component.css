@@ -1,0 +1,14 @@
+.main-container {
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+  color: #585858;
+}
+
+article {
+  line-height: 200%;
+  font-size: large;
+  color: #6b6b6b;
+}
